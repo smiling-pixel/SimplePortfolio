@@ -1,0 +1,147 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #eee;
+  overflow-x: hidden;
+}
+
+header {
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  backdrop-filter: blur(5px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #00ffc8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ffc8;
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  text-align: center;
+}
+
+.hero-content {
+  animation: fadeIn 2s ease forwards;
+}
+
+.highlight {
+  color: #00ffc8;
+}
+
+button {
+  padding: 0.75rem 2rem;
+  border: none;
+  background: #00ffc8;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:transform 0.3s;
+}
+
+button:hover {
+  background: #00bfa6;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #000;
+  color: #666;
+}
+
+#preloader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #333;
+  border-top-color: #00ffc8;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

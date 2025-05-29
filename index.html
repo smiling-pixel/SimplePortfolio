@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <header>
+      <nav>
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">Smiling</span></h1>
+        <p>Creative Developer & Designer</p>
+        <button onclick="scrollToSection('projects')">View Work</button>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Well as you all know my name is Uba Nnaemeka Charles,aka Smiling I am
+        aspiring to be a full-stack developer who will have experience in all
+        aspect of modern tech. I am also still a student at Babcock University
+        studying software engineering.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Smiling. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
